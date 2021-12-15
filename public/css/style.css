@@ -60,7 +60,9 @@ body {
   cursor: pointer;
   transition: .3s;
 }
-
+.now-playing {
+  color: violet;
+}
 .play-item:hover {
   opacity: 1;
 }

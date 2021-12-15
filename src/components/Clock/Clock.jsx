@@ -13,7 +13,7 @@ setInterval(() => {
   return (
     <>
       <time className="time">{currentTime}</time>
-      <date className="date">{currentDate}</date>
+      <div className="date">{currentDate}</div>
     </>
   );
 };

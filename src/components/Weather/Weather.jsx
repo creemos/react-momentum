@@ -3,7 +3,7 @@ import axios from "axios";
 
 export const Weather = () => {
   const API_KEY = "171811e697309d78e6a7383c0e567329";
-  const [city, setCity] = useState('')
+  const [city, setCity] = useState('Tambov')
   const [temp, setTemp] = useState('')
   const [description, setDescription] = useState('')
   const [wind, setWind] = useState('')
@@ -15,10 +15,14 @@ const changeCity = (e) => {
   setCity(e.target.value)
 }
 
+useEffect(() => {
+  if (localStorage.getItem('city')){
+    setCity(localStorage.getItem('city'))
+  }
+  getWeather()
+}, [city])
+
   const getWeather = () => {
-    if (localStorage.getItem('city')){
-      setCity(localStorage.getItem('city'))
-    }
     axios
       .get(
         `https://api.openweathermap.org/data/2.5/weather?q=${city}&lang=en&appid=${API_KEY}&units=metric`
@@ -27,19 +31,17 @@ const changeCity = (e) => {
         icon.current.classList.add(`owf-${response.data.weather[0].id}`)
         setDescription(response.data.weather[0].description)
         setTemp(Math.floor(response.data.main.temp))
-        setWind(response.data.wind.speed)
+        setWind(Math.floor(response.data.wind.speed))
         setHumidity(response.data.main.humidity)
 
       });
   };
 
-  useEffect(() => {
-    getWeather()
-  }, [city])
+
 
   return (
     <div className="weather">
-      <input type="text" className="city" value={city} onChange={changeCity} />
+      <input type="text" className="city" value={city} onChange={changeCity} onBlur={getWeather}/>
       <i className="weather-icon owf" ref={icon}></i>
       <div className="weather-error"></div>
       <div className="description-container">

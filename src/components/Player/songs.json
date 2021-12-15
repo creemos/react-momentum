@@ -1,0 +1,30 @@
+{
+    "songs": {
+        "1": {
+        "artist": "30 second to mars",
+        "title": "A beautiful life",
+        "link": "https://mezzoforte.ru/s/artist/308840-30_seconds_to_mars_a_beautiful_lie.mp3"
+    },
+        "2": {
+            "artist": "30 second to mars",
+            "title": "The kill",
+            "link": "https://mezzoforte.ru/s/artist/342884-30_seconds_to_mars_the_kill.mp3"
+        },
+        "3": {
+            "artist": "30 second to mars",
+            "title": "From yesterday",
+            "link": "https://mezzoforte.ru/s/artist/488738-30_seconds_to_mars_from_yesterday.mp3"
+        },
+        "4": {
+            "artist": "30 second to mars",
+            "title": "Hurricane",
+            "link": "https://mezzoforte.ru/s/artist/347647-30_seconds_to_mars_hurricane.mp3"
+        },
+        "5": {
+            "artist": "30 second to mars",
+            "title": "ill attack",
+            "link": "https://mezzoforte.ru/s/artist/417488-30_seconds_to_mars_ill_attack.mp3"
+        }
+    }
+    
+}
