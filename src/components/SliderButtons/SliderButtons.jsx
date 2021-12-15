@@ -1,10 +1,10 @@
 import React from "react";
 
-export const SliderButtons = () => {
+export const SliderButtons = ({setBg}) => {
   return (
-      <div class="slider-icons">
-        <button class="slide-prev slider-icon"></button>
-        <button class="slide-next slider-icon"></button>
+      <div className="slider-icons">
+        <button className="slide-prev slider-icon" onClick={setBg}></button>
+        <button className="slide-next slider-icon" onClick={setBg}></button>
       </div>
   );
 };

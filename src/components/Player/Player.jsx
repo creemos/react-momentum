@@ -2,13 +2,13 @@ import React from "react";
 
 export const Player = () => {
   return (
-    <div class="player">
-      <div class="player-controls">
-        <button class="play-prev player-icon"></button>
-        <button class="play player-icon"></button>
-        <button class="play-next player-icon"></button>
+    <div className="player">
+      <div className="player-controls">
+        <button className="play-prev player-icon"></button>
+        <button className="play player-icon"></button>
+        <button className="play-next player-icon"></button>
       </div>
-      <ul class="play-list"></ul>
+      <ul className="play-list"></ul>
     </div>
   );
 };
