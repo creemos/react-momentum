@@ -1,0 +1,22 @@
+
+.change-quote {
+    margin-bottom: 30px;
+    background-image: url("../../assets/svg/reload.svg");
+  }
+  
+  @keyframes spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(180deg);
+    }
+  }
+  
+  .quote {
+    min-height: 32px;
+  }
+  
+  .author {
+    min-height: 20px;
+  }

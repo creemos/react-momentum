@@ -1,5 +1,6 @@
 import React, { useState, useRef } from "react";
 import data from "./songs.json";
+import "./Player.css"
 
 export const Player = () => {
   let [currentTrack, setCurrentTrack] = useState(3);
@@ -57,7 +58,7 @@ export const Player = () => {
               className="play-item"
               key={item}
               style={
-                item != currentTrack ? { color: "white" } : { color: "violet" }
+                item != currentTrack ? { color: "white" } : { color: "#30d5c8" }
               }
             >
               {data.songs[item].artist}: "{data.songs[item].title}"

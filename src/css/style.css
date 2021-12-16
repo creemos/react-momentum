@@ -17,7 +17,6 @@ body {
   color: #fff;
   text-align: center;
   background-blend-mode: multiply;
-  animation: opacity 1s ease-in-out;
 }
 
 @keyframes opacity {
@@ -218,12 +217,12 @@ body {
 }
 
 .greeting-container {
+  min-width: 20%;
   display: flex;
   flex-wrap: wrap;
   justify-content: stretch;
   align-items: center;
   min-height: 48px;
-  width: 100vw;
   font-size: 40px;
 }
 
@@ -261,18 +260,6 @@ body {
   padding: 20px;
 }
 
-.change-quote {
-  margin-bottom: 30px;
-  background-image: url("../assets/svg/reload.svg");  
-}
-
-.quote {
-  min-height: 32px;
-}
-
-.author {
-  min-height: 20px;
-}
 
 @media (max-width: 768px) {
   .time {

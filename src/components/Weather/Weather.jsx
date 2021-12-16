@@ -1,5 +1,6 @@
 import React, { useRef, useEffect, useState } from "react";
 import axios from "axios";
+import "./Weather.css"
 
 export const Weather = () => {
   const API_KEY = "171811e697309d78e6a7383c0e567329";

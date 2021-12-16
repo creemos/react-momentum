@@ -1,4 +1,5 @@
 import React, {useEffect, useState} from "react";
+import "./Greeting.css"
 
 export const Greeting = () => {
 
@@ -30,7 +31,7 @@ const usernameChange = (ev) => {
   return (
     <div className="greeting-container">
       <span className="greeting">Good {greetingText}, </span>
-      <input type="text" className="name" value={username} onChange={usernameChange} placeholder="[Enter your name]" />
+      <input type="text" className="name" value={username} onChange={usernameChange} placeholder="[Enter your name]" onKeyPress={() => {"this.style.width = ((this.value.length + 1) * 8) + 'px';"}} />
     </div>
   );
 };

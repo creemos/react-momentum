@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import "./Clock.css"
 
 export const Clock = () => {
 const [currentTime, setCurrentTime] = useState(new Date().toLocaleTimeString())
