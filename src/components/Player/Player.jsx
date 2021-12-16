@@ -5,6 +5,7 @@ import "./Player.css"
 export const Player = () => {
   let [currentTrack, setCurrentTrack] = useState(1);
   const [isPlaying, setIsPlaying] = useState(false);
+  const [volumeValue, setVolumeValue] = useState(`0.5`)
   const srcAudio = data["songs"][`${currentTrack}`]["link"];
   const audioPlayer = useRef();
 
@@ -30,6 +31,10 @@ export const Player = () => {
     audioPlayer.current.play();
   };
 
+  useEffect(() => {
+    audioPlayer.current.volume = volumeValue
+    
+  }, [volumeValue])
 
   return (
     <div className="player">
@@ -51,6 +56,7 @@ export const Player = () => {
           className="play-next player-icon"
           onClick={() => changeSong(1)}
         ></button>
+        <input type="range" className="volume" min="0" max="1" step="0.1" value={volumeValue} onChange={(e) => setVolumeValue(e.target.value)} />
       </div>
       <ul className="play-list">
         {Object.keys(data.songs).map((item) => {

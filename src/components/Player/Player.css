@@ -87,3 +87,22 @@
 .play-next {
   background-image: url("../../assets/svg/play-next.svg");
 }
+input[type=range]  {
+  width: 100px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+input[type="range"]::-webkit-slider-runnable-track {
+  height: 7px;
+  background-color: #30d5c8;
+}
+input[type=range]::-webkit-slider-thumb {
+  border: 1px solid #30d5c8;
+  cursor: pointer;
+  width:10px;
+  height: 15px;
+  -webkit-appearance: none;
+  margin-top: -4px;
+  background-color: white;
+}
