@@ -1,9 +1,9 @@
-import React, { useState, useRef } from "react";
+import React, { useState, useRef, useEffect } from "react";
 import data from "./songs.json";
 import "./Player.css"
 
 export const Player = () => {
-  let [currentTrack, setCurrentTrack] = useState(3);
+  let [currentTrack, setCurrentTrack] = useState(1);
   const [isPlaying, setIsPlaying] = useState(false);
   const srcAudio = data["songs"][`${currentTrack}`]["link"];
   const audioPlayer = useRef();
@@ -30,9 +30,10 @@ export const Player = () => {
     audioPlayer.current.play();
   };
 
+
   return (
     <div className="player">
-      <audio ref={audioPlayer} src={srcAudio} />
+      <audio ref={audioPlayer} src={srcAudio}/>
       <div className="player-controls">
         <button
           className="play-prev player-icon"
@@ -57,8 +58,12 @@ export const Player = () => {
             <li
               className="play-item"
               key={item}
+              onClick={() => {
+                setCurrentTrack(item)
+              }
+            }
               style={
-                item != currentTrack ? { color: "white" } : { color: "#30d5c8" }
+                (item != currentTrack) ? { color: "white" } : { color: "#30d5c8" }
               }
             >
               {data.songs[item].artist}: "{data.songs[item].title}"
