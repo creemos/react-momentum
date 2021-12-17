@@ -25,7 +25,7 @@ export const Quote = () => {
       <button
         className="change-quote"
         onClick={() => showQuote()}
-        style={quoteLoading ? { animation: `spin 2s` } : {}}
+        style={quoteLoading ? { animation: `spin 1s infinite` } : {}}
       ></button>
       <div>
         <div className="quote">{quoteContent}</div>

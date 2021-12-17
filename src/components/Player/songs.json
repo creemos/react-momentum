@@ -1,29 +1,19 @@
 {
     "songs": {
         "1": {
-        "artist": "НАШЕ Радио",
-        "title": "Панки хой!",
+        "artist": "Радио",
+        "title": "НАШЕ Радио (Панки хой!)",
         "link": "https://nashe1.hostingradio.ru/nashepunks.mp3"
     },
         "2": {
-            "artist": "Дискотека",
-            "title": "90-х",
+            "artist": "Радио",
+            "title": "Дискотека: 90-х",
             "link": "https://radiorecord.hostingradio.ru/sd9096.aacp?46caa922"
         },
         "3": {
-            "artist": "30 second to mars",
-            "title": "From yesterday",
-            "link": "https://mezzoforte.ru/s/artist/488738-30_seconds_to_mars_from_yesterday.mp3"
-        },
-        "4": {
-            "artist": "30 second to mars",
-            "title": "Hurricane",
-            "link": "https://mezzoforte.ru/s/artist/347647-30_seconds_to_mars_hurricane.mp3"
-        },
-        "5": {
-            "artist": "30 second to mars",
-            "title": "ill attack",
-            "link": "https://mezzoforte.ru/s/artist/417488-30_seconds_to_mars_ill_attack.mp3"
+            "artist": "Радио",
+            "title": "Radio Record",
+            "link": "https://radiorecord.hostingradio.ru/rr_main96.aacp"
         }
     }
     

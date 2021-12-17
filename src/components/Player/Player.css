@@ -94,11 +94,13 @@ input[type=range]  {
   appearance: none;
 }
 input[type="range"]::-webkit-slider-runnable-track {
+  box-shadow: 0 0 10px rgba(0,0,0,0.8);
   height: 7px;
   background-color: #30d5c8;
 }
 input[type=range]::-webkit-slider-thumb {
-  border: 1px solid #30d5c8;
+  border: 1px solid black;
+  box-shadow: 0 0 10px rgba(0,0,0,0.8);
   cursor: pointer;
   width:10px;
   height: 15px;

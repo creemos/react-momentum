@@ -40,13 +40,16 @@ export const Weather = () => {
 
   return (
     <div className="weather">
-      <input
+      <div className="search-block">
+        <input
         type="text"
         className="city"
         value={city}
         onChange={changeCity}
-        onBlur={getWeather}
       />
+      <button className="search-button search" onClick={getWeather}></button>
+      </div>
+      
       <i className="weather-icon owf" ref={icon}></i>
       <div className="weather-error"></div>
       <div className="description-container">

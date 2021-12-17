@@ -64,8 +64,10 @@ export const Player = () => {
             <li
               className="play-item"
               key={item}
-              onClick={() => {
-                setCurrentTrack(item)
+              onClick={async () => {
+                await setCurrentTrack(item)
+                setIsPlaying(true)
+                audioPlayer.current.play();
               }
             }
               style={
