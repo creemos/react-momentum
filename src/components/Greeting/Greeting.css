@@ -34,13 +34,14 @@
     opacity: .6;
   }
   
-  .loginBtn {
+  .greetingBtn {
     background: transparent;
     cursor: pointer;
-    padding: 5px;
+    padding: 0 5px;
     border: 1px white solid;
     font-size: 40px;
     color: white;
+    margin-left: 10px;
   }
   .loginBtn:hover {
     box-shadow: 0 0 10px rgba(0,0,0,0.8);

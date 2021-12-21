@@ -7,10 +7,11 @@ import { Greeting } from "./components/Greeting/Greeting";
 import { Quote } from "./components/Quote/Quote";
 import axios from "axios";
 import { useEffect } from "react";
+import { Todo } from "./components/Todo/Todo";
+import { useSelector } from 'react-redux';
 
 function App() {
   useEffect(() => {
-    //document.body.style = `background: url("https://buyoncdn.ru/preset/112100256/pages_original/63/ef/45/63ef45a14a8c2f04ec3c98a2b5b3acc40afd58d9.jpg") center/cover, rgba(0, 0, 0, 0.5);`
     setBg();
   }, []);
 
@@ -28,10 +29,13 @@ function App() {
       });
   };
 
+  let isAuth = useSelector((state) => state.auth.isAuth)
+
   return (
     <div className="App">
       <header className="header">
         <Player />
+        { isAuth ? <Todo /> : null }        
         <Weather />
       </header>
       <main className="main">

@@ -6,8 +6,8 @@ const [currentTime, setCurrentTime] = useState(new Date().toLocaleTimeString())
 const [currentDate, setCurrentDate] = useState(new Date().toLocaleDateString())
 
 setInterval(() => {
-  setCurrentTime(new Date().toLocaleTimeString('en-US', {hour12: false}))
-  setCurrentDate(new Date().toLocaleDateString('en-US', {weekday: 'long', month: 'long', day: 'numeric'}))
+  setCurrentTime(new Date().toLocaleTimeString('ru-RU', {hour12: false}))
+  setCurrentDate(new Date().toLocaleDateString('ru-RU', {weekday: 'long', month: 'long', day: 'numeric'}))
 }, 1000)
 
 
